@@ -11,7 +11,7 @@ export default function Opretsag({ sigtelser }) {
     const [categorizedSigtelser, setCategorizedSigtelser] = useState({
         'Færdselsloven': [],
         'Straffeloven': [],
-        'Bek. euf. stoffer': [],
+        'euf': [],
         'Våbenloven': [],
         'Ordensbekendtgørelsen': [],
     });
@@ -20,7 +20,7 @@ export default function Opretsag({ sigtelser }) {
         const newCategorizedSigtelser = {
             'Færdselsloven': [],
             'Straffeloven': [],
-            'Bek. euf. stoffer': [],
+            'euf': [],
             'Våbenloven': [],
             'Ordensbekendtgørelsen': [],
         };
@@ -201,7 +201,7 @@ export default function Opretsag({ sigtelser }) {
                     <div className="container mx-auto p-8">
                         <Accordion title="Færdselsloven" />
                         <Accordion title="Straffeloven" />
-                        <Accordion title="Bek. euf. stoffer" />
+                        <Accordion title="euf" />
                         <Accordion title="Våbenloven" />
                         <Accordion title="Ordensbekendtgørelsen" />
                     </div>
